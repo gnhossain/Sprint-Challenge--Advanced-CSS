@@ -58,6 +58,10 @@
       }
 
       .btn {
+        .button();
+        &:hover{
+          .button(white, @river-bend);
+        }
       }
     }
 
@@ -73,3 +77,51 @@
     }
   }
 }// home
+
+h1{
+  font-size: 3.9rem;
+  text-align: center;
+}
+
+//Mobile
+
+@media @phone{
+
+  .intro img{
+    width: 100%;
+    height:auto;
+  }
+
+  .space-images img{
+    &:nth-child(1){
+      width:100%;
+      margin:20px 4%; 
+      }
+      &:nth-child(2), &:nth-child(3){
+      display:none;
+      }
+  }
+
+  .walk{
+    flex-direction: column-reverse;
+    padding: 0;
+
+  }
+
+  .walk-text{
+    .center() !important;  
+  }
+
+   .walk-img{
+     .center() !important;
+     margin:20px 0;
+   }
+
+  .btn{
+    .center() !important;
+    height: 6rem; 
+    padding:2rem !important;
+    text-align: center;
+  }
+
+}

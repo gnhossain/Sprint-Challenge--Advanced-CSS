@@ -160,6 +160,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 500px;
+  margin: auto;
+  padding: 1% 0;
+}
+nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -212,6 +225,22 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #454A59;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 2rem;
+  padding: 5px 25px;
+  width: fit-content;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #454A59;
+  border-radius: 4px;
+  font-size: 2rem;
+  padding: 5px 25px;
+  width: fit-content;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -220,4 +249,45 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+h1 {
+  font-size: 3.9rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .intro img {
+    width: 100%;
+    height: auto;
+  }
+  .space-images img:nth-child(1) {
+    width: 100%;
+    margin: 20px 4%;
+  }
+  .space-images img:nth-child(2),
+  .space-images img:nth-child(3) {
+    display: none;
+  }
+  .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .walk-text {
+    display: block !important;
+    max-width: 500px !important;
+    width: 100% !important;
+  }
+  .walk-img {
+    display: block !important;
+    max-width: 500px !important;
+    width: 100% !important;
+    margin: 20px 0;
+  }
+  .btn {
+    display: block !important;
+    max-width: 500px !important;
+    width: 100% !important;
+    height: 6rem;
+    padding: 2rem !important;
+    text-align: center;
+  }
 }
