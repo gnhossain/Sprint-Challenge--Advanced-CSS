@@ -167,6 +167,9 @@ nav {
   max-width: 500px;
   margin: auto;
   padding: 1% 0;
+  position: fixed;
+  opacity: 0.8;
+  background-color: white;
 }
 nav a {
   text-decoration: none;
